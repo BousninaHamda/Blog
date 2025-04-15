@@ -23,7 +23,7 @@ export default async function DashboardRoute() {
   if (!user) {
     return <div>You don&apos;t have any post yet</div>;
   }
-  const data = await getData(user.id);
+  const data = await getData(user?.id);
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
